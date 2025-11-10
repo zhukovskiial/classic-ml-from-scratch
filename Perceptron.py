@@ -16,8 +16,6 @@ class Perceptron:
 
     def fit(self, X, y):
         n_samples, n_features = X.shape
-
-        # init parameters
         self.weights = np.zeros(n_features)
         self.bias = 0
         y_ = np.where(y > 0 , 1, 0)
